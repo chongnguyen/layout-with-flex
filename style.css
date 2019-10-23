@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*========= header ==========  */
+.header {
+  background-color: lightcoral;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/*======== main =============  */
+.container .main {
+  flex-grow: 1;
+}
+.main .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.main .box-content {
+  flex-basis: 48%;
+  background-color: lightblue;
+  margin-bottom: 20px;
+  height: 300px;
+}
+
+.main .trend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+.main .trend .trend-main {
+  flex-grow: 3;
+}
+
+.main .trend .trend-sub {
+  flex-grow: 1;
+}
+
+.main .trend div[class*="trend-"] {
+  background-color: lightpink;
+  margin: 0 10px;
+}
+
+.main .post .post-item {
+  background-color: lightseagreen;
+  margin: 10px;
+  height: 100px;
+}
+
+/*============ aside =============  */
+.container .aside {
+  flex-basis: 300px;
+  background-color: lightgreen;
+  margin: 10px;
+  min-height: 150px;
+  flex-shrink: 0;
+}
+
+.quangcao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.quangcao-item {
+  height: 50px;
+  flex-basis: 24%;
+  background-color: lightgoldenrodyellow;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: gray;
+  padding: 20px;
+}
